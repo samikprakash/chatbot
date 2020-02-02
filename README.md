@@ -9,7 +9,7 @@ Types of queries answered:
   
 Dependencies:
   1) Python >= 3.5
-  2) NLTK
+  2) NLTK: 
     a) First, do pip install NLTK.
     b) Second, open interactive python shell and import NLTK.
     c) Third, type nltk.download() which will take you to a downloader. Download all modules.
