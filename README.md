@@ -15,3 +15,9 @@ Dependencies:
     c) Third, type nltk.download() which will take you to a downloader. Download all modules.
   3) Keras
   4) Numpy
+
+How to run:
+  1) Open command prompt/terminal in this directory.
+  2) python3 bot.py
+  3) If the bot is unable to understand the user query, the control will be transferred to a human.
+  4) To give the control back to the bot, type "bot" in the "(human):" section. 
