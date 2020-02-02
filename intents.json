@@ -1,0 +1,57 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","whats up"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","QUIT"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through courses offered in college, Professors offering those courses, past record for the courses, prereqs required for this course"],
+         "context": [""]
+        },
+        {"tag": "courses",
+         "patterns": ["What are the courses offered?", "Courses offered in first second third fourth year?", "Give me a list of courses offered", "List all courses available", "Which drugs courses are available?" ],
+         "responses": ["Navigating to Course directory"],
+         "context": [""]
+        },
+        {"tag": "professor",
+         "patterns": ["professor for course number", "which professor teaches this course? ", "professor list", "professor name", "professor courses?" ],
+         "responses": ["Loading course data"],
+         "context": ["professor_module_by_id"]
+        },
+        {"tag": "past_records",
+         "patterns": ["what are the past records for this course", "past year scores?", "average score?", "grade slabs for this course", "past reviews for this course", "previous years records","previous years papers" ],
+         "responses": ["Loading the Previous Years Module"],
+         "context": [""]
+        },
+       
+        
+        
+        {"tag": "prereq_required",
+         "patterns": ["Prerequisites for the course?", "prereq required?", "what are the prereqs for this course", "what are the pre requisites for this course?", "prerequisites for the course","prereqs","pre requisites?","prerequisites?" ],
+         "responses": ["Loading data for pre requisite required"],
+         "context": ["search_prereq_by_id"]
+        },
+        {"tag": "search_prereq_by_id",
+         "patterns": [],
+         "responses": ["Loading pre requisites required for this course"],
+         "context": [""]
+        }
+        
+   ]
+}
